@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="text"]{ /* this is attribute selector because it targets only input elements*/
+            border:2px solid maroon;
+        }
+        input[type="password"]{
+            border: 5px dashed magenta;
+        }
+        ul > li{/*This is a child selector because all values in the ul list are given the color */
+            color:rgb(211, 82, 101);
+        }
+        h1 + p + p {
+            color:rgb(117, 6, 23);
+        }
+        a:hover{
+            color:rgb(176, 125, 13);
+        }
+        li:nth-child(2){
+            color:darkgoldenrod;
+        }
+        div:not(#b){
+            border: 2px solid gold;
+        }
+        #c::before{
+            content:"true";
+            color:blueviolet;
+        }
+        #g::after{
+            content:"false";
+            color:rgb(178, 14, 153);
+        }
+        #m::first-letter{
+            font-size: 200%;
+            color:rgb(117, 6, 23);
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Enter name"> <br>
+    <input type="password" placeholder="Enter password">
+    <ul>
+        <li>home</li>
+        <li>school</li>
+    </ul>
+    <h1>Any message</h1>
+    <p>Any message 2</p>
+    <p>Any message 3</p>
+    <a href="#">Ogochukwu</a>
+    <ul>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+    </ul>
+    <div id="a">There</div>
+    <div id="b">Here</div>
+    <p id="c">Value 1</p>
+    <p id="g">Value 2</p>
+    <p id="m">Value 3</p>
+</body>
+</html> 
